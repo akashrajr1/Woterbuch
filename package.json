@@ -1,0 +1,16 @@
+{
+  "name": "woterbuch",
+  "version": "0.1.0",
+  "description": "A chrome extension for German-English & English-German translations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.config.js"
+  },
+  "author": "Akashraj R",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {}
+}
