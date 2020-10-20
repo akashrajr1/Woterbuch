@@ -9,6 +9,12 @@ class BaseDictionary {
 
         this.baseUrl = baseUrl
         this.apiAuth = apiAuth
+        this.sourceLanguage = null
+        this.targetLanguage = null
+    }
+
+    get translationId() {
+        return `${this.sourceLanguage}-${this.targetLanguage}`
     }
 
     getUrlWithParams(url, params) {
@@ -26,7 +32,10 @@ class BaseDictionary {
     }
 
     async translateWord(word, sourceLanguage, targetLanguage) {
-        let request = this.getTranslateRequest(word, sourceLanguage, targetLanguage)
+        this.sourceLanguage = sourceLanguage
+        this.targetLanguage = targetLanguage
+
+        let request = this.getTranslateRequest(word)
         return this.getTranslateResponse(request)
     }
 }

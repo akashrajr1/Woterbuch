@@ -16,7 +16,7 @@ function translateSourceWord(event) {
     let sourceInput = $(SOURCE.INPUT_SELECTOR)
     let targetInput = $(TARGET.INPUT_SELECTOR)
 
-    let word = sourceInput.val()
+    let word = sourceInput.val().split(' ').pop()
     getDictionary()
         .translateWord(word, SOURCE.LANGUAGE, TARGET.LANGUAGE)
         .then(translation => targetInput.val(translation))
