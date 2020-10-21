@@ -22,11 +22,13 @@ I recently started learning German on the side, and I couldn't find a chrome ext
 
 * Use `.js` files from webpack `/dist`
 
-### Roadmap
+### Roadmap/Ideas
 
 - [ ] Multi Language Support
 - [ ] AutoComplete Feature
 - [ ] Integrate this [Dictionary API](https://www.openthesaurus.de/synonyme/search?q=hund&format=application/json) (for advanced usage)
+- [ ] German Verb Conjugation
+- [ ] Local Storage
 
 ### Security
 
