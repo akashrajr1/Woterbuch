@@ -1,6 +1,6 @@
 {
   "name": "woterbuch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A chrome extension for German-English & English-German translations",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
