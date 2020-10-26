@@ -1,10 +1,10 @@
 const {setResponse, setError, getTenseTranslation, transformShellConjugationResponse} = require('./utils').transformer
-const {executeCmd, getTranslationCmd, getVerbConjugationCmd} = require('./utils').cmdTool
+const {COMMAND} = require('./utils').cmdTool
 
 // https://github.com/soimort/translate-shell
 async function translationAPI(req, res) {
     try {
-        let out = await executeCmd(getTranslationCmd(req.params))
+        let out = await COMMAND.TRANSLATE(req.params)
         setResponse(res, out)
     } catch(err) {
         setError(res)
@@ -14,18 +14,17 @@ async function translationAPI(req, res) {
 // https://github.com/nicksellen/german
 async function verbConjugationAPI(req, res) {
     try {
-        await getVerbConjugation(res, req)
+        await getVerbConjugation(req, res)
     } catch(error) {
         setError(res)
     }
 }
 
-async function getVerbConjugation(res, req) {
-    let out = await executeCmd(getVerbConjugationCmd(req.params))
+async function getVerbConjugation(req, res) {
+    let out = await COMMAND.CONJUGATE(req.params)
+    let conjugationObject = transformShellConjugationResponse(out)
 
     let {filter} = req.query
-
-    let conjugationObject = transformShellConjugationResponse(out)
     if (!filter) setResponse(res, conjugationObject)
 
     let response = {}
