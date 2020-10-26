@@ -1,7 +1,14 @@
-body {
+#translation {
   width: 250px;
   height: 100px;
   display: flex; 
+  flex-direction:column; 
+  justify-content:center;
+  margin: 20px;
+}
+
+#verbTable {
+  width: 250px;
   flex-direction:column; 
   justify-content:center;
   margin: 20px;

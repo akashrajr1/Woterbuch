@@ -1,12 +1,5 @@
 class BaseDictionary {
     constructor({baseUrl, apiAuth}) {
-
-        // Singleton
-        if (BaseDictionary._instance) {
-            return BaseDictionary._instance
-        }
-        BaseDictionary._instance = this;
-
         this.baseUrl = baseUrl
         this.apiAuth = apiAuth
         this.sourceLanguage = null

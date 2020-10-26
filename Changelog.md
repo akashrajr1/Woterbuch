@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2020-10-26
+
+### Added
+
+- [Local Server](https://github.com/akashrajr1/Woterbuch/blob/master/doc/LocalServer.js) for Verb Conjugation and Translations
+- Makefile for installing [Local Server](https://github.com/akashrajr1/Woterbuch/blob/master/doc/LocalServer.js)
+- Better Documentation for features
+
 ## [0.1.1] - 2020-10-20
 
 ### Added
@@ -23,5 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Chrome Extension for German-English and English-German Translation
 - README with build and deployment steps
 
+[0.2.0]: https://github.com/akashrajr1/Woterbuch/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/akashrajr1/Woterbuch/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/akashrajr1/Woterbuch/releases/tag/v0.1.0

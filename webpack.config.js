@@ -1,11 +1,12 @@
 const webpack = require('webpack')
 const path = require('path')
 
+const DIR = './src/client'
 module.exports = {
-    entry: './src/popup.js',
+    entry: `${DIR}/popup.js`,
     output: {
         filename: 'popup.js',
-        path: path.resolve(__dirname, 'src/dist'),
+        path: path.resolve(__dirname, `${DIR}/dist`),
     },
     mode: 'production',
     plugins: [

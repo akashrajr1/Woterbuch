@@ -28,13 +28,16 @@ class YandexDictionary extends BaseDictionary{
     }
 
     async getTranslateResponse(request) {
-        let xmlData = await fetch(request)
-                        .then(res => res.text())
+        try {
+            let xmlData = await fetch(request).then(res => res.text())
 
-        let parser = new DOMParser()
-        let xmlDoc = parser.parseFromString(xmlData, 'text/xml')
-        
-        return this.getWord(xmlDoc)
+            let parser = new DOMParser()
+            let xmlDoc = parser.parseFromString(xmlData, 'text/xml')
+
+            return this.getWord(xmlDoc)
+        } catch(err) {
+            return null
+        }
     }
 
     getWord(xmlDoc) {
