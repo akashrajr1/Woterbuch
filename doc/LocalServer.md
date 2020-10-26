@@ -37,4 +37,4 @@ So a hybrid approach is being used where best case scenario is that remote API (
 
 
 [Makefile]: https://github.com/akashrajr1/Woterbuch/blob/master/Makefile
-[server.js]: https://github.com/akashrajr1/Woterbuch/blob/master/server.js
+[server.js]: https://github.com/akashrajr1/Woterbuch/blob/master/src/server/server.js
