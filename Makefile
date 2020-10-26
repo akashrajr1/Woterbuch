@@ -1,8 +1,11 @@
-NAME="woterbuch"
-COMMAND=woterbuch
+NAME="Woterbuch"
+VERSION="v0.1.0"
 BUILDDIR ?= tmp
 
 .PHONY: install install-verb-conjugation install-translation clean
+
+version:
+	@echo "$(NAME): $(VERSION)"
 
 install: install-verb-conjugation install-translation 
 
