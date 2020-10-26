@@ -9,6 +9,10 @@ APIs from [Yandex](https://yandex.com/)
 
 I recently started learning German on the side, and I couldn't find a chrome extension which solved my needs for German Translations. So, I decided to build my own 🤷‍♂️
 
+### Features
+
+Coming soon ...
+
 ### Deployment Instructions
 
 
